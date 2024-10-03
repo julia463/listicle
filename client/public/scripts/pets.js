@@ -1,3 +1,36 @@
+function getPic(pet){
+    console.log("Pet is" + pet.animal_type)
+    let src
+    switch(pet.animal_type){
+        case 'Dog':
+            src = '../pet_pics/dog.jpeg'
+            break;
+        case 'Cat':
+            src = '../pet_pics/cat.jpg';
+            break;
+        case 'Rabbit':
+            src = '../pet_pics/bunny.jpeg'
+            break;
+        case 'Hamster':
+            src = '../pet_pics/hamster.jpg'
+            break;
+        case 'Turtle':
+            src = '../pet_pics/Turtle.jpeg'
+            break;
+        case 'Guinea Pig':
+            src = '../pet_pics/guineapig.jpg'
+            break;
+        case 'Fish':
+            src = '../pet_pics/fish.jpg'
+            break;
+        case 'Parrot':
+            src = '../pet_pics/parrot.jpg'
+            break;
+        default:
+            break;
+    }
+    return src;
+}
 const renderPets = async () => {
     const response = await fetch('/pets')
     const data = await response.json()
@@ -15,6 +48,10 @@ const renderPets = async () => {
             petName.textContent = pet.name
             const petType = document.createElement('h4')
             petType.textContent = pet.animal_type
+
+            const petPic = document.createElement('img')
+            petPic.src = getPic(pet)
+
             const petBreed = document.createElement('h5')
             petBreed.textContent = pet.breed
             const petAge = document.createElement('p')
@@ -27,7 +64,8 @@ const renderPets = async () => {
             readMore.setAttribute('role', 'button')
             readMore.href = `/pets/${pet.id}`
 
-            container.appendChild(petName,petType,petBreed,petAge,petPersonality, readMore)
+            container.appendChild(petPic)
+            container.appendChild(petName)
             container.appendChild(petType)
             container.appendChild(petBreed)
             container.appendChild(readMore)

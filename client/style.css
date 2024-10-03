@@ -1,7 +1,8 @@
 /* Root Styles CSS */
 :root {
   background-color: lavender;
-  font-family: Avenir, Helvetica, sans-serif;
+  font-family: "Fredoka", sans-serif;
+  font-weight:300;
   color: black;
 }
 
@@ -10,6 +11,8 @@
   overflow: hidden;
   padding: 20px 10px;
   padding-bottom: 60px;
+  font-family: "Fredoka", sans-serif;
+  font-weight:500;
 }
 
 .header-left {
@@ -25,6 +28,7 @@
 
 .header-left h1 {
   float: right;
+  left: 50px;
   font-size: 45px;
   
 }
@@ -59,9 +63,13 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items:center;
 }
 
-.card, .pet-info {
+.card {
+  display:grid;
+  place-items:center;
+  text-align:center;
   width: 300px;
   height: 400px;
   background: transparent;
@@ -78,7 +86,9 @@ main {
 }
 
 .card img {
-  height: 100%;
+  height: 100px;
+  width: 100px;
+
 }
 
 .top-container {
@@ -139,18 +149,41 @@ main {
 
 .pet-info {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  place-items:center;
+  font-family: "Fredoka", sans-serif;
+  font-weight:300;
+  background-color:antiquewhite
 }
 
-.image-container {
-  padding-left: 100px;
-  width: 40vw;
-}
 
-.image-container img {
-  width: 80%;
-}
+
+
 
 .pet-details {
   width: 45vw;
+}
+
+#pet-content h2 {
+  margin-bottom: 15px;
+  font-size: 24px; 
+}
+
+#pet-content p {
+  margin-bottom: 10px; 
+  display: block; 
+}
+
+#personality {
+  margin-top: 20px; 
+}
+
+#pet-content {
+  justify-content:center;
+  text-align: center; 
+  padding: 20px; 
+  height:50vh;
+  width:50vw;
 }

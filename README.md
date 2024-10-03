@@ -29,6 +29,11 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented required features:
 
 <img src='https://i.imgur.com/a6TZo2k.mp4' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<video width="320" height="240" controls>
+  <source src="https://i.imgur.com/a6TZo2k.mp4" type="video/mp4">
+</video>
+
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ScreenToGif GIF tool here
 <!-- Recommended tools:

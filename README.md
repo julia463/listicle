@@ -27,8 +27,11 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
+![petsicle2](https://github.com/user-attachments/assets/e722de2b-057c-4128-9043-47d7ecb66741)
 
-https://i.imgur.com/a6TZo2k.mp4
+Here's a picture of the Railway table
+
+![Screenshot 2024-10-02 212546](https://github.com/user-attachments/assets/f3bea31e-981d-4a92-b978-b5ac1f164aa2)
 
 
 <!-- Replace this with whatever GIF tool you used! -->
